@@ -15,7 +15,6 @@ header {
     height: 250px;
     padding: 60px 80px 48px 80px;
     position: relative;
-    overflow: hidden;
 }
 .photo {
     float: left;
@@ -83,7 +82,7 @@ main{
     height: 100%;
     box-sizing: border-box;
     margin-top: -250px;
-    padding: 250px 0 70px 0;
+    padding: 35px 0 70px 0;
 }
 .aside{
     display: table-cell;
