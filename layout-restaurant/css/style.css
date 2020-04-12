@@ -6,22 +6,432 @@ html, body {
     margin: 0 auto;
     height: 100%;
 }
- header {
-    background-image: url(images/backgr_1.png);
-    box-sizing: border-box;
+/***************************
+***********page1**********/
+header {
+    background-image: url(../images/backgr_1.png);
     height: 750px;  
+    width: 100%;
 }
+.navbar{
+    display: flex;
+    height: 110px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 1600px;
+}
+.logo{
+    display: flex;
+    margin-left: 175px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font: 36px 'Yeseva One', cursive;
+    flex-direction: row;
+}
+.logo:hover, .navigation > li > a:hover, .socials > li > a:hover{
+    color: #fff;
+    text-shadow: rgb(255, 255, 255) 0 0 20px;
+}
+.navigation{
+    display: flex;
+    width: 815px;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: 215px;
+    list-style-type: none;
+}
+.navigation > li > a{
+    font: bold 21px 'Gentium Book Basic', serif;
+    text-decoration: none;
+    color: #e6e6e6;
+    margin: 6px 47px 6px 0;
+    display: block;
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    color: #dab33e;
+    width: 81px;
+    margin:11px 0 0 -30px;
+}
+.socials > li > a{
+    color: #dab33e;
+}
+.promo{
+    margin: 0 auto;
+    padding-top: 238px;
+    height: 374px;
+    width: 961px;
+    text-align: center;
+}
+.promoText{
+    font: 90px 'Yeseva One', cursive;
+    color: #f4f4f4;
+    text-align: center;
+}
+.ornament1{
+    padding: 31px 0 33px 0;
+}
+.aButton > a{
+    display: inline-block;
+    padding-top: 15px;
+    width: 230px;
+    height: 57px;
+    font: 18px 'Lato', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.aButton > a:first-child{
+    margin-right: 32px;
+}
+.black{
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 0.8px solid rgba(0, 0, 0, 0.3);
+}
+.white{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0.8px solid rgba(255, 255, 255, 0.3);
+}
+.aButton > a:hover{
+    font-weight: bold;
+    box-shadow: 0 0 30px rgba(255,255,255,1);
+    border: 1px solid rgba(255,255,255,0.6);
+}
+
+/***************************
+************page2**********/
 main {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     margin-top: -750px;
-    padding-bottom: 320px;
+    padding: 750px 0 320px 0;
     box-sizing: border-box;
 }
+.page2{
+    background-image: url(../images/backgr_2.png);
+    height: 710px;
+    width: 100%;
+}
+.block2{
+    height: 510px;
+    width: 430px;
+    padding: 100px 0 0 285px;
+    text-align: center;
+}
+.ornament2{
+    padding: 12px 0 30px 0;
+}
+h2{
+    font: 36px 'Yeseva One', cursive;
+    color: #cc9900;
+}
+.text_block2{
+    font: 16px 'Lato', sans-serif;
+    line-height: 1.6em;
+    color: #4c4c4c;
+    padding-bottom: 51px;
+}
+.man{
+    display: block;
+    margin-left: 139px;
+}
+/***************************
+************page3**********/
+.page3{
+    background-image: url(../images/backgr_3.png);
+    height: 758px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+.block3{
+    height: 557px;
+    width: 570px;
+    margin: 0 0 0 815px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+.block3Internal{
+    width: 408px;
+    height: 404px;    
+    margin: 0 auto;
+}
+.ornament3{
+    padding: 15px 0 29px 0;
+}
+.text_block3{
+    font: 16px 'Lato', sans-serif;
+    line-height: 1.6em;
+    color: #fff;
+}
+.h2white{
+    color: #fff;
+}
+.ingredients{
+    width: 110px; height: 110px;
+    border-radius: 100px;
+    margin-top: 66px;
+    border: 6px solid rgba(255, 255, 255, 0.1);
+}
+.block3Internal > figure{
+    display: flex;
+    justify-content: space-around;
+}
+/***************************
+************page4**********/
+.page4{
+    background-image: url(../images/backgr_4.png);
+}
+.page4Gradient{
+    background: linear-gradient(to bottom right,  rgba(63, 63, 63, 0.1), rgba(255, 255, 255, 0));
+    box-sizing: border-box;
+    padding: 50px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 994px;
+    align-content: space-evenly;
+}
+.menu{
+    width: 454px;
+}
+.menu h2{
+    background: url(../images/block2_4_6_ornament.png) no-repeat bottom;
+    height: 82px;
+    text-align: center;
+    padding-top: 50px;
+}
+.dish{
+    display: flex;
+    flex-direction: row;
+    font: 21px 'Yeseva One', cursive;
+    color: #c89f2d;
+    border-bottom: solid 1px #e5d29a;
+    padding: 20px 0 11px 0;
+}
+.dishName{
+    display: flex;
+    justify-content: left;
+    width: 372px;
+}
+.dishPrice{
+    display: flex;
+    justify-content: right;
+}
+.dishDescription{
+    font: 16px 'Lato', sans-serif;
+    padding-top: 11px;
+}
+.menuBox{
+    padding: 0 13px 11px 13px;  
+    box-sizing: border-box;
+}
+.menuBorder{
+    border: 1px solid #e5d29a;
+    padding: 0 13px 11px 13px;  
+    box-sizing: border-box;
+}
+.special{
+    border: 1px solid #e5d29a;
+    font: 14px 'Lato', sans-serif;
+    color: #fff;
+    background-color: #dcc583;
+    height: 24px;
+    width: 69px;
+    text-align: center;
+    padding-top: 2px;
+    box-sizing: border-box;
+    margin: 7px 0 0 387px;   
+}
+/***************************
+************page5**********/
+.page5{
+    background-image: url(../images/backgr_5.png);
+    height: 757px;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+.block5{
+    height: 557px;
+    width: 771px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 77px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.block5Internal{
+    width: 639px;
+    height: 308px;    
+    margin: 0 auto;
+}
+.text_block5{
+    font: bold 25px 'Gentium Book Basic', serif;
+    line-height: 1.7em;
+    color: #dde0df;
+    background-size: 40px;
+    padding-left: 43px;
+    margin-top: -44px;
+}
+.text_block5::before{
+    content: '“'; 
+    font: 96px Georgia, 'Times New Roman', Times, serif;  
+    margin-left: -40px;
+    top: 32px;
+    left: -8px;
+    position: relative;
+}
+.text_block5 > p{
+    padding-top: 40px;
+    font: 18px 'Lato', sans-serif;
+}
+.ornament5{
+    padding-top: 20px;
+}
+/***************************
+************page6**********/
+.page6{
+    background-image: url(../images/backgr_6.png);
+    height: 710px;
+}
+.page6img{
+    display: flex;
+    justify-content: space-between;
+    width: 570px;
+}
+.block6{
+    display: flex;
+    height: 507px;
+    width: 1106px;
+    padding: 100px 279px 103px 215px;
+    text-align: center;
+    justify-content: space-between;
+}
+.aside6{
+    width: 442px;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -24px;
+    align-content: space-between;
+    height: 211px;
+}
+.form > div > input:focus, .form > div > select:focus{
+    outline: none;
+    border: 1px solid #c9a131;
+}
+.date {
+    background:#fff url(../images/calendar.jpeg)  94% 46% no-repeat ;
+}
+.date::-webkit-inner-spin-button {
+    display: none;
+}
+.date::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    
+}
+.form > div > input, .form > div > select, .date{
+    height: 35px;
+    width: 200px;
+    font: italic 16px 'Open Sans', sans-serif;
+    color: #7c7c7c;
+    margin-top: 10px;
+    padding-left: 13px;
+    box-sizing: border-box;
+    border: 1px solid #c8c6c6;
+}
+.form > div{
+    width: 202px;
+    height: 59px;
+    padding-bottom: 23px;
+    text-align: left;
+}
+.form > div > label{
+    font: bold 14px 'Open Sans', sans-serif;
+    color: #c9a131;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+.form > div > select{
+    -webkit-appearance: none;
+    background:#fff url(../images/selekt_arr.png)  96% 46% no-repeat ;
+    outline: none;
+}
+
+.but{
+    height: 37px;
+    width: 200px;
+    font: 16px 'Open Sans', sans-serif;
+    background-color: #c9a131;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.but:hover{
+    background-color: #8a6500;
+    font-weight: bold;
+}
+
+/***************************
+***********footer**********/
 .footer {
     height: 320px;
     margin-top: -320px;
     background-color: #191919;
     box-sizing: border-box;
+    color: #fff;
 }
-  
+.footer-cont{
+    padding: 52px 285px 50px 215px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font: 16px 'Open Sans', sans-serif;
+    height: 218px;
+    line-height: 1.6;
+}
+h3{
+    background: url(../images/footer_ornament.png) no-repeat center bottom;
+    font: 21px 'Yeseva One';
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.aboutUs{
+    width: 370px;
+}
+.hours, .location{
+    width: 230px;
+}  
+.socialFooter, .socialFooter > li{
+    display: flex;
+   justify-content: center;
+}
+.socialFooter > li, .socialFooter > li > a{
+    padding-right: 10px;
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;  
+}
+.socialFooter > li > a{
+    margin-top: -4px;
+}
+.socialFooter > li > a:hover{
+    color: rgb(255, 217, 45);
+    text-shadow: rgb(255, 255, 255) 0 0 10px;
+}
+.socialFooter{
+    margin-top: 56px;  
+}
