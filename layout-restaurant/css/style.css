@@ -260,18 +260,17 @@ h2::after{
     padding: 0 13px 11px 13px;  
     box-sizing: border-box;
 }
-.special{
-    border: 1px solid #e5d29a;
+.special::before{
+    content: 'Special';
     font: 14px 'Lato', sans-serif;
     color: #fff;
-    background-color: #dcc583;
-    height: 24px;
-    width: 69px;
+    background-color: #cfad4d;
     text-align: center;
-    padding-top: 2px;
+    padding: 2px 10px;
     box-sizing: border-box;
-    margin: 7px 0 0 385px;   
+    margin: 0 0 0 391px;   
 }
+
 /***************************
 ************reviews**********/
 .reviews{
