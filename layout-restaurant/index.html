@@ -9,16 +9,16 @@
     <title>Restaurant</title>
 </head>
 <body>
-    <header id="p1">
+    <header id="home">
         <nav class="navbar">
-            <a class="logo" href="#p1">LAMBDA</a>
+            <a class="logo" href="#home">LAMBDA</a>
             <ul class="navigation">
-                <li><a href="#p1">Home</a></li>
-                <li><a href="#p2">About</a></li>
-                <li><a href="#p3">Ingredients</a></li>
-                <li><a href="#p4">Menu</a></li>
-                <li><a href="#p5">Reviews</a></li>
-                <li><a href="#p6">Reservations</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#reservations">Reservations</a></li>
                 <div class="socials">
                     <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="https://youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
@@ -28,49 +28,46 @@
         </nav>
         <section class="promo">
             <h1 class="promoText">the right ingredients for the right food</h1>
-            <img class="ornament1" src="images/block1_ornament.png" alt="ornament">
-            <div class="aButton">
-                <a href="#p6" class="black">BOOK A TABLE</a>
-                <a href="#p4" class="white">SEE THE MENU</a>
+            <div class="home-button">
+                <a href="#reservations" class="black-but">BOOK A TABLE</a>
+                <a href="#menu" class="white-but">SEE THE MENU</a>
             </div>
         </section>     
     </header>
 
     <main>
-        <section id="p2" class="page2">
-            <div class="block2">
-                <h2>Just the right food</h2>
-                <img class="ornament2" src="images/block2_4_6_ornament.png" alt="ornament">
-                <div class="text_block2">If you’ve been to one of our restaurants, you’ve seen – and tasted
+        <section id="about" class="about">
+            <article class="container-about">
+                <h2 class="ornament-orange">Just the right food</h2>
+                <div class="text_rightFood">If you’ve been to one of our restaurants, you’ve seen – and tasted
                     – what keeps our customers coming back for more. Perfect materials and freshly baked food,
                     delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist!
                     Stop in today and check us out!</div>
                 <img class="man" src="images/block2_man.png" alt="man">
-            </div>
+            </article>
         </section>
        
-        <section id="p3" class="page3">
-            <div class="block3">
-                <div class="block3Internal">
+        <section id="ingredients" class="ingredients">
+            <div class="container-ingr">
+                <article class="ingredients-gradient">
                     <h2 class="h2white">Fine ingredients</h2>
-                    <img class="ornament3" src="images/block3_5_ornament.png" alt="ornament">
-                    <div class="text_block3">If you’ve been to one of our restaurants, you’ve seen – and tasted – 
+                    <div class="text_ingredients">If you’ve been to one of our restaurants, you’ve seen – and tasted – 
                         what keeps our customers coming back for more. Perfect materials and freshly baked food, 
                         delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! 
                         Stop in today and check us out!</div>
                     <figure>
-                        <img class="ingredients" src="images/block3_img1.png" alt="wheat">
-                        <img class="ingredients" src="images/block3_img2.png" alt="peper">
-                        <img class="ingredients" src="images/block3_img3.png" alt="bread">
+                        <img class="imgIng" src="images/block3_img1.png" alt="wheat">
+                        <img class="imgIng" src="images/block3_img2.png" alt="peper">
+                        <img class="imgIng" src="images/block3_img3.png" alt="bread">
                     </figure>
-                </div>
+                </article>
             </div>
         </section>
           
-        <article id="p4" class="page4">
-            <div class="page4Gradient"> 
-                <section class="menu">
-                    <h2>Appetisers</h2>
+        <article id="menu" class="menu">
+            <div class="menu-gradient"> 
+                <section class="menu-section">
+                    <h2 class="ornament-orange">Appetisers</h2>
                     <div class="menuBox">
                         <div class="dish">
                             <div class="dishName ">Tzatsiki</div>
@@ -96,8 +93,8 @@
                     </div>
                 </section>
 
-                <section class="menu">
-                    <h2>Salads</h2>
+                <section class="menu-section">
+                    <h2 class="ornament-orange">Salads</h2>
                     <div class="menuBox">
                         <div class="dish">
                             <div class="dishName">Olive Special</div>
@@ -124,8 +121,8 @@
                     </div>
                     </section>
 
-                <section class="menu">
-                    <h2>Starters</h2>
+                <section class="menu-section">
+                    <h2 class="ornament-orange">Starters</h2>
                     <div class="menuBox">
                         <div class="dish">
                             <div class="dishName">Haloumi</div>
@@ -143,8 +140,8 @@
                     </div>
                 </section>
             
-                <section class="menu">
-                    <h2>Main Dishes</h2>
+                <section class="menu-section">
+                    <h2 class="ornament-orange">Main Dishes</h2>
                     <div class="menuBox">
                         <div class="dish">
                             <div class="dishName">Cornish Mackerel</div>
@@ -181,48 +178,46 @@
             </div>
         </article>
 
-        <section id="p5" class="page5">
-            <div class="block5">
-                <div class="block5Internal">
+        <section id="reviews" class="reviews">
+            <div class="reviews-container">
+                <article class="reviews-gradient">
                     <h2 class="h2white">Guest Reviews</h2>
-                    <img class="ornament5" src="images/block3_5_ornament.png" alt="ornament">
-                    <blockquote class="text_block5">If you’ve been to one of our restaurants, you’ve seen – and tasted – 
+                    <blockquote class="reviews-text">If you’ve been to one of our restaurants, you’ve seen – and tasted – 
                         what keeps our customers coming back for more. Perfect materials and freshly baked food, 
                         delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! 
                         Stop in today and check us out!
                         <p><cite>- food inc, New York</cite></p>
                     </blockquote>                    
-                </div>
+                </article>
             </div>
         </section>
 
-        <section id="p6" class="page6">
-            <div class="block6">
-                <figure class="page6img">
+        <section id="reservations" class="reservations">
+            <div class="img-container">
+                <figure class="reservations-img">
                     <img src="images/block6_img1.png" alt="eat">
                     <img src="images/block6_img2.png" alt="eat">
                 </figure>
-                <div class="aside6">
-                    <h2>Just the right food</h2>
-                    <img class="ornament2" src="images/block2_4_6_ornament.png" alt="ornament">
-                    <div class="text_block2">If you’ve been to one of our restaurants, you’ve seen – and tasted
+                <article class="aside-reservations">
+                    <h2 class="ornament-orange">Just the right food</h2>
+                    <div class="text_rightFood">If you’ve been to one of our restaurants, you’ve seen – and tasted
                         – what keeps our customers coming back for more. Perfect materials and freshly baked food.</br>
                         Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in 
-                        today and check us out! Perfect materials and freshly baked food.</div>
-                    <form action="/" method="/" class="form">
-                        <div>
+                        today and check us out! Perfect materials and freshly baked food. </div>
+                    <form action="/" method="/" class="form-reservation">
+                        <div class="input-container">
                             <label for="nickname">Name</label>
                             <input id="nickname" type="text" name="nickname" placeholder="your name*">
                         </div>
-                        <div>
+                        <div class="input-container">
                             <label for="mail">Email</label>
                             <input id="mail" type="email" name="mail" placeholder="your email*">
                         </div> 
-                        <div>
+                        <div class="input-container">
                             <label for="date">Date</label>
                             <input class="date" id="date" type="text" name="date" placeholder="date*" onfocus="(this.type='date')">
                         </div> 
-                        <div>
+                        <div class="input-container">
                             <label for="number">Party number</label>
                             <select  id="number" name="number">
                                 <option hidden>party number*</option>
@@ -233,13 +228,13 @@
                         </div> 
                         <button class="but" type="submit">Book now!</button>
                     </form>
-                </div>
+                </article>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-cont">
+        <div class="footer-container">
             <section class="aboutUs">
                 <h3>About Us</h3>
                 <div>Lambda's new and expanded Chelsea location represents a truly authentic Greek patisserie, 
@@ -253,7 +248,7 @@
                 <div><b>Mon-Thu:</b> 7:00am-8:00pm</div>
                 <div><b>Fri-Sun:</b> 7:00am-10:00pm</div> 
                 <ul class="socialFooter">
-                    <li><i class="fab fa-cc-mastercard"></i></li>
+                    <li><i class="fab fa-cc-amex"></i></i></li>
                     <li><i class="fab fa-cc-paypal"></i></li>
                     <li><i class="fab fa-cc-visa"></i></li>
                     <li><i class="fab fa-cc-discover"></i></li>

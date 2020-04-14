@@ -7,7 +7,7 @@ html, body {
     height: 100%;
 }
 /***************************
-***********page1**********/
+***********home**********/
 header {
     background-image: url(../images/backgr_1.png);
     height: 750px;  
@@ -65,7 +65,7 @@ header {
 }
 .promo{
     margin: 0 auto;
-    padding-top: 238px;
+    padding-top: 236px;
     height: 374px;
     width: 961px;
     text-align: center;
@@ -74,11 +74,16 @@ header {
     font: 90px 'Yeseva One', cursive;
     color: #f4f4f4;
     text-align: center;
+    background: url(../images/block1_ornament.png) no-repeat bottom;
+    height: 287px;
+    text-align: center;
+    margin-bottom: 34px;
+    box-sizing: border-box;
 }
 .ornament1{
     padding: 31px 0 33px 0;
 }
-.aButton > a{
+.home-button > a{
     display: inline-block;
     padding-top: 15px;
     width: 230px;
@@ -88,25 +93,25 @@ header {
     text-decoration: none;
     box-sizing: border-box;
 }
-.aButton > a:first-child{
+.home-button > a:first-child{
     margin-right: 32px;
 }
-.black{
+.black-but{
     background-color: rgba(0, 0, 0, 0.6);
     border: 0.8px solid rgba(0, 0, 0, 0.3);
 }
-.white{
+.white-but{
     background-color: rgba(255, 255, 255, 0.2);
     border: 0.8px solid rgba(255, 255, 255, 0.3);
 }
-.aButton > a:hover{
+.home-button > a:hover{
     font-weight: bold;
     box-shadow: 0 0 30px rgba(255,255,255,1);
     border: 1px solid rgba(255,255,255,0.6);
 }
 
 /***************************
-************page2**********/
+************about**********/
 main {
     width: 100%;
     /*height: 100%;*/
@@ -114,44 +119,48 @@ main {
     padding: 750px 0 320px 0;
     box-sizing: border-box;
 }
-.page2{
+.about{
     background-image: url(../images/backgr_2.png);
     height: 710px;
     width: 100%;
 }
-.block2{
+.container-about{
     height: 510px;
     width: 430px;
     padding: 100px 0 0 285px;
     text-align: center;
 }
-.ornament2{
-    padding: 12px 0 30px 0;
-}
 h2{
     font: 36px 'Yeseva One', cursive;
     color: #cc9900;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-.text_block2{
+.text_rightFood{
     font: 16px 'Lato', sans-serif;
     line-height: 1.6em;
     color: #4c4c4c;
-    padding-bottom: 51px;
+    max-height: 207px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 27px; 
 }
 .man{
     display: block;
     margin-left: 139px;
+    margin-top: 51px;
 }
 /***************************
-************page3**********/
-.page3{
+************ingredients**********/
+.ingredients{
     background-image: url(../images/backgr_3.png);
     height: 758px;
     width: 100%;
     box-sizing: border-box;
     padding-top: 100px;
 }
-.block3{
+.container-ingr{
     height: 557px;
     width: 570px;
     margin: 0 0 0 815px;
@@ -160,7 +169,7 @@ h2{
     padding-top: 80px;
     box-sizing: border-box;
 }
-.block3Internal{
+.ingredients-gradient{
     width: 408px;
     height: 404px;    
     margin: 0 auto;
@@ -168,30 +177,37 @@ h2{
 .ornament3{
     padding: 15px 0 29px 0;
 }
-.text_block3{
+.text_ingredients{
     font: 16px 'Lato', sans-serif;
     line-height: 1.6em;
     color: #fff;
+    max-height: 155px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .h2white{
     color: #fff;
+    background: url(../images/block3_5_ornament.png) no-repeat bottom;
+    height: 82px;
+    text-align: center;
+    margin-bottom: 25px;
 }
-.ingredients{
+.imgIng{
     width: 110px; height: 110px;
     border-radius: 100px;
     margin-top: 66px;
     border: 6px solid rgba(255, 255, 255, 0.1);
 }
-.block3Internal > figure{
+.ingredients-gradient > figure{
     display: flex;
     justify-content: space-around;
 }
 /***************************
-************page4**********/
-.page4{
+************menu**********/
+.menu{
     background-image: url(../images/backgr_4.png);
 }
-.page4Gradient{
+.menu-gradient{
     background: linear-gradient(to bottom right,  rgba(63, 63, 63, 0.1), rgba(255, 255, 255, 0));
     box-sizing: border-box;
     padding: 50px 70px;
@@ -202,14 +218,14 @@ h2{
     height: 994px;
     align-content: space-evenly;
 }
-.menu{
+.menu-section{
     width: 454px;
+    margin-bottom: 50px;
 }
-.menu h2{
+.ornament-orange{
     background: url(../images/block2_4_6_ornament.png) no-repeat bottom;
     height: 82px;
     text-align: center;
-    padding-top: 50px;
 }
 .dish{
     display: flex;
@@ -227,6 +243,7 @@ h2{
 .dishPrice{
     display: flex;
     justify-content: right;
+    padding-left: 20px;
 }
 .dishDescription{
     font: 16px 'Lato', sans-serif;
@@ -251,17 +268,17 @@ h2{
     text-align: center;
     padding-top: 2px;
     box-sizing: border-box;
-    margin: 7px 0 0 387px;   
+    margin: 7px 0 0 385px;   
 }
 /***************************
-************page5**********/
-.page5{
+************reviews**********/
+.reviews{
     background-image: url(../images/backgr_5.png);
     height: 757px;
     box-sizing: border-box;
     padding-top: 100px;
 }
-.block5{
+.reviews-container{
     height: 557px;
     width: 771px;
     text-align: center;
@@ -270,20 +287,23 @@ h2{
     box-sizing: border-box;
     margin: 0 auto;
 }
-.block5Internal{
+.reviews-gradient{
     width: 639px;
     height: 308px;    
     margin: 0 auto;
 }
-.text_block5{
+.reviews-text{
     font: bold 25px 'Gentium Book Basic', serif;
     line-height: 1.7em;
     color: #dde0df;
     background-size: 40px;
     padding-left: 43px;
     margin-top: -44px;
+    max-height: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
-.text_block5::before{
+.reviews-text::before{
     content: '“'; 
     font: 96px Georgia, 'Times New Roman', Times, serif;  
     margin-left: -40px;
@@ -291,7 +311,7 @@ h2{
     left: -8px;
     position: relative;
 }
-.text_block5 > p{
+.reviews-text > p{
     padding-top: 40px;
     font: 18px 'Lato', sans-serif;
 }
@@ -299,17 +319,17 @@ h2{
     padding-top: 20px;
 }
 /***************************
-************page6**********/
-.page6{
+*******reservations********/
+.reservations{
     background-image: url(../images/backgr_6.png);
     height: 710px;
 }
-.page6img{
+.reservations-img{
     display: flex;
     justify-content: space-between;
     width: 570px;
 }
-.block6{
+.img-container{
     display: flex;
     height: 507px;
     width: 1106px;
@@ -317,18 +337,21 @@ h2{
     text-align: center;
     justify-content: space-between;
 }
-.aside6{
+.aside-reservations{
     width: 442px;
 }
-.form{
+.aside-reservations > div{
+    max-height: 151px;
+}
+.form-reservation{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: -24px;
+    margin-top: 33px;
     align-content: space-between;
     height: 211px;
 }
-.form > div > input:focus, .form > div > select:focus{
+.input-container > input:focus, .input-container > select:focus{
     outline: none;
     border: 1px solid #c9a131;
 }
@@ -339,10 +362,9 @@ h2{
     display: none;
 }
 .date::-webkit-calendar-picker-indicator {
-    opacity: 0;
-    
+    opacity: 0;  
 }
-.form > div > input, .form > div > select, .date{
+.input-container > input, .input-container > select, .date{
     height: 35px;
     width: 200px;
     font: italic 16px 'Open Sans', sans-serif;
@@ -352,24 +374,23 @@ h2{
     box-sizing: border-box;
     border: 1px solid #c8c6c6;
 }
-.form > div{
+.input-container{
     width: 202px;
     height: 59px;
     padding-bottom: 23px;
     text-align: left;
 }
-.form > div > label{
+.input-container > label{
     font: bold 14px 'Open Sans', sans-serif;
     color: #c9a131;
     -webkit-appearance: none;
     box-sizing: border-box;
 }
-.form > div > select{
+.input-container > select{
     -webkit-appearance: none;
     background:#fff url(../images/selekt_arr.png)  96% 46% no-repeat ;
     outline: none;
 }
-
 .but{
     height: 37px;
     width: 200px;
@@ -394,7 +415,7 @@ h2{
     box-sizing: border-box;
     color: #fff;
 }
-.footer-cont{
+.footer-container{
     padding: 52px 285px 50px 215px;
     display: flex;
     justify-content: space-between;
