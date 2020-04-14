@@ -75,13 +75,15 @@ header {
     color: #f4f4f4;
     text-align: center;
     background: url(../images/block1_ornament.png) no-repeat bottom;
-    height: 287px;
+    max-height: 287px;
     text-align: center;
     margin-bottom: 34px;
     box-sizing: border-box;
 }
-.ornament1{
-    padding: 31px 0 33px 0;
+.promoText::after{
+    content: '';
+    height: 71px;
+    display: block;
 }
 .home-button > a{
     display: inline-block;
@@ -133,11 +135,14 @@ main {
 h2{
     font: 36px 'Yeseva One', cursive;
     color: #cc9900;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    text-align: center;
 }
-.text_rightFood{
+h2::after{
+    content: '';
+    height: 41px;
+    display: block;
+}
+.text-block{
     font: 16px 'Lato', sans-serif;
     line-height: 1.6em;
     color: #4c4c4c;
@@ -188,8 +193,6 @@ h2{
 .h2white{
     color: #fff;
     background: url(../images/block3_5_ornament.png) no-repeat bottom;
-    height: 82px;
-    text-align: center;
     margin-bottom: 25px;
 }
 .imgIng{
@@ -222,9 +225,8 @@ h2{
     width: 454px;
     margin-bottom: 50px;
 }
-.ornament-orange{
+.h2-orange{
     background: url(../images/block2_4_6_ornament.png) no-repeat bottom;
-    height: 82px;
     text-align: center;
 }
 .dish{
@@ -311,13 +313,14 @@ h2{
     left: -8px;
     position: relative;
 }
-.reviews-text > p{
+.reviews-text p{
     padding-top: 40px;
-    font: 18px 'Lato', sans-serif;
+    font: 18px 'Lato', sans-serif;   
 }
-.ornament5{
-    padding-top: 20px;
+.reviews-text cite{
+    font-style: normal;
 }
+
 /***************************
 *******reservations********/
 .reservations{
